@@ -1,0 +1,88 @@
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c2c2c;
+  }
+  
+  .about-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+.about-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* optional, to indicate it's interactive */
+}
+
+.about-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+  
+  .about-section h2 {
+    font-size: 1.8rem;
+    color: #285943;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-section.contact a {
+    color: #4CA27B;
+    text-decoration: none;
+  }
+  
+  .about-section.contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .reach-us {
+  background-color: #d8c695da;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.reach-us a {
+  color: #285943;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.ranch-info {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #444;
+}
+
+.directions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.location-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.directions-text {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+}
