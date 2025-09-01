@@ -1,66 +1,152 @@
+
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+}
+
 .background-color {
-    background-color: #E2E8C0;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e2e8c0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .topnav {
-    background-color: #285943;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 14px 30px;
-    border-bottom: 3px solid #19382A;
-    font-family: 'Segoe UI', sans-serif;
-  }
+  background-color: #e8d7c0;
+  border-bottom: 0.2rem solid #2e2614;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--secondary-text-color);
+}
+
+.topnav .element {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--text-color)
+}
+
+.topnav img {
+  width: 4rem;
+}
 
 .topnav a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 16px 20px;
-    margin: 0 15px;
-    transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 16px 20px;
+  transition: 0.3s;
+  border-radius: 4rem;
+  color: var(--text-color);
+  border: solid 0.1rem #e8d7c0;
+}
+
+.topnav .active {
+  background-color: #2e2614;
+  color: #e8d7c0;
+}
+
+.topnav .a:active {
+  background-color: #2e2614;
+  color: #e8d7c0;
 }
 
 .topnav a:hover {
-    background-color: #4CA27B;
-    color: #333333;
-    border-radius: 4px;
+  background-color: #e8d7c0;
+  color: #2e2614;
+  border: #2e2614 solid 0.1rem;
 }
 
-.topnav a.active {
-    background-color: #19382A;
-    color: white;
-    border-radius: 4px;
+.topnav p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+  max-width: 75ch;
+  text-align: left;
 }
 
-p {
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #2c2c2c;
-    margin: 1rem 0;
-    max-width: 75ch;  
-    text-align: left;
-  }
+.mobile-nav {
+  background-color: #e8d7c0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--accent-color);
+}
+
+.mobile-bar .logo{
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-bar{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.2rem;
+    border-bottom: 0.1rem solid #2e2614;
+}
+
+.mobile-buttons{
+  display: flex;
+  flex-direction: column;
+  gap:0.2rem;
+    border-bottom: 0.1rem solid #2e2614;
+}
+
+.mobile-buttons a{
+  color: #2c2c2c;
+  text-decoration: none;
+  padding-left: 0.5rem;
+  font-weight: 600;
+}
+
+.mobile-buttons .active{
+  background-color: #2c2c2c;
+  color: #e2e8c0;
+}
+
+.mobile-nav img {
+  width: 4rem;
+}
+
+.mobile-nav button {
+  border: none;
+  background-color: #e8d7c0;
+  font-size: x-large;
+}
 
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
   border-radius: 50%;
   width: 55px;
   height: 55px;
   text-align: center;
   font-size: 28px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -72,4 +158,30 @@ p {
 .whatsapp-float:hover {
   transform: scale(1.1);
   background-color: #1ebd5a;
+}
+
+.verticalSplit {
+  border-right: solid 0.1rem #2e2614;
+  padding: 0.2rem;
+}
+
+/* desktop navbar */
+.topnav {
+  display: flex;
+}
+
+/* mobile navbar hidden by default */
+.mobile-nav {
+  display: none;
+}
+
+/* show mobile version on small screens */
+@media (max-width: 768px) {
+  .topnav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
 }

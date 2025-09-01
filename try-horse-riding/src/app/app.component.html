@@ -1,5 +1,35 @@
-<nav>
+<nav  class="nav">
   <div class="topnav">
+    <img src="assets/logo.png">
+    <div class="element">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/news" routerLinkActive="active">News</a>
+      <a routerLink="/services" routerLinkActive="active">Services</a>
+      <a routerLink="/about" routerLinkActive="active">About Us</a>
+    </div>
+    <div class="element">
+      <div class="verticalSplit">
+        <i class="fa-solid fa-phone"></i>
+        +4083086198
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot"></i> Saftica, Dimieni
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav class="mobile-nav nav">
+  <div class="mobile-bar">
+    <button (click)="isMenuOpen = !isMenuOpen">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="logo">
+      Magic Action Horses
+      <img src="assets/logo.png">
+    </div>
+  </div>
+  <div *ngIf="isMenuOpen" class="mobile-buttons">
     <a routerLink="/home" routerLinkActive="active">Home</a>
     <a routerLink="/news" routerLinkActive="active">News</a>
     <a routerLink="/services" routerLinkActive="active">Services</a>
