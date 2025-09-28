@@ -1,59 +1,32 @@
-# Compiled output
-/dist
-/tmp
-/out-tsc
-# Only exists if Bazel was run
-/bazel-out
+# Node modules
+/node_modules/
 
-# Dependencies
-/node_modules
+# Angular build output
+/dist/
+/out-tsc/
 
-# Cordova
-/www
-/plugins
-/platforms
+# Environment files
+/src/environments/*.ts
 
-# Electron
-/dist-electron
-/dist-packages
-/electron.main.js
+# IDE/editor files
+/.idea/
+/.vscode/
+/*.sublime-workspace
+/*.sublime-project
 
-# IDEs and editors
-.idea/*
-!.idea/runConfigurations/
-!.idea/codeStyleSettings.xml
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-xcuserdata/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# Maven
-/target
-/log
-
-# Misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-/reports
-/src/translations/template.*
-# /src/environments/.env.*
-
-# System Files
+# System files
 .DS_Store
 Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: generated JS files in src (dacă nu vrei să le urmărești)
+*.js
+*.js.map
+
+# Optional: temporary files
+*.tmp
+*.swp
