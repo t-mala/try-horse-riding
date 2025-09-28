@@ -1,0 +1,53 @@
+<div class="lander">
+  <div class="lander-bg"></div>
+  <div class="lander-overlay">
+    <div class="logo" animationType="slideInLeft">
+        <img src="assets/logoW.png"/>
+        <h1>Magic Action Horses</h1>
+    </div>
+    <div class="info" [@scaleIn]>
+      <div>
+        <i class="fa-solid fa-phone"></i> +40 720 759 624
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot"></i> Săftica, Ilfov
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section bg1" appAnimateOnScroll animationType="fadeIn">
+  <div class="info" appAnimateOnScroll animationType="slideInLeft" [delay]="200">
+    <h1>About us</h1>
+      Magic Action Horses este un centru de echitație dedicat pasionaților de
+      cai, oferind experiențe autentice și sigure într-un cadru natural,
+      liniștit. Aici, învățăm să iubim și să respectăm caii, oferind lecții de
+      călărie pentru toate vârstele și nivelurilor, de la începători la avansați.
+      Atmosfera prietenoasă și instructorii calificați fac din fiecare vizită o
+      adevărată aventură ecvestră.
+      <button class="button" routerLink="/about">
+        Afla mai mult <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </button>
+  </div>
+  <img src="assets/img3.jpg" appAnimateOnScroll animationType="slideInRight" [delay]="400"/>
+</div>
+
+<div class="section bg2" appAnimateOnScroll animationType="fadeIn">
+  <img src="assets/img4.jpg" alt="Copii călărind la centrul de echitație" appAnimateOnScroll animationType="slideInLeft" [delay]="200"/>
+  <div class="info" appAnimateOnScroll animationType="slideInRight" [delay]="400">
+    <h1>Serviciile noastre</h1>
+    <ul>
+      <li>Lecții de echitație pentru copii și adulți</li>
+      <li>Tabere de vară și activități educaționale</li>
+      <li>Plimbări în natură și trasee ecvestre</li>
+      <li>Terapie asistată cu cai (hipoterapie)</li>
+    </ul>
+    <button routerLink="/services" class="button">
+      Vezi detalii <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </button>
+  </div>
+</div>
+
+<div class="section bg3" appAnimateOnScroll animationType="scaleIn">
+  <div class="elfsight-app-5a330796-4ce9-43c3-aeb8-2fa5ec17579b" data-elfsight-app-lazy></div>
+</div>

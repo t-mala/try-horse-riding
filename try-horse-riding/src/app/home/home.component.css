@@ -147,13 +147,13 @@
 .section {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   max-width: 100vw;
   overflow: hidden;
 
   gap: 0.5rem;
-  padding: 0.25rem 0.5rem;
-  height: 30rem;
+  padding: 2rem 0.5rem;
+  min-height: 30rem;
   flex-wrap: wrap;
 }
 
@@ -197,9 +197,10 @@
   width: 50%;
   background-color: var(--element-bg-color);
   color: var(--accent-color);
-  padding: 0.5rem 1rem;
+  padding: 2rem 1rem;
   border-radius: 1rem;
   font-size: larger;
+  min-height: 20rem;
 }
 
 .section .info p, h2{

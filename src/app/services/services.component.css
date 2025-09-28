@@ -1,0 +1,153 @@
+/* Page header styling */
+.page-header {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  background: linear-gradient(135deg, var(--element-bg-color) 0%, var(--bg-color) 100%);
+  margin-top: 3rem;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  margin: 0 0 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Home page consistent styling */
+.section {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  overflow: hidden;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  min-height: 30rem;
+  flex-wrap: nowrap;
+}
+
+.bg1 {
+  align-items: flex-end;
+}
+
+.bg2 {
+  align-items: flex-start;
+} 
+
+.section .info h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.section .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: var(--element-bg-color);
+  color: var(--accent-color);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  font-size: larger;
+  min-height: 20rem;
+}
+
+.section .info p, h2{
+  margin: 0;
+}
+
+.section .info a{
+  color: var(--accent-color)
+}
+
+.section .info ul {
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+}
+
+.section .info li {
+  margin-bottom: 0.5rem;
+}
+
+.section .button {
+  border-radius: 4rem;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border: var(--accent-color) solid 0.2rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  font-size: large;
+  font-weight: 700;
+  width: 50%;
+  margin-top: 1rem;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+.section .button:hover {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  border: var(--accent-color) solid 0.2rem;
+}
+
+.section img {
+  width: 50%;
+  border-radius: 1rem;
+  border: none;
+}
+
+@media screen and (max-width: 748px) {
+  .page-header {
+    padding: 4rem 1rem 1.5rem;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+  .bg2  {
+    flex-direction: column-reverse;
+  }
+
+  .section .info{
+    font-size: medium;
+    width: 90%;
+  }
+
+  .section img {
+    width: 100%;
+  }
+
+  .section .info h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .section .button {
+    width: 80%;
+  }
+}

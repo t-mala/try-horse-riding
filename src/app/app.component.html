@@ -1,0 +1,49 @@
+<nav  class="nav" [class.transparent]="isTransparent">
+  <div class="topnav">
+    <img src="assets/logo.png">
+    <div class="element">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/news" routerLinkActive="active">Noutăți</a>
+      <a routerLink="/services" routerLinkActive="active">Servicii</a>
+      <a routerLink="/about" routerLinkActive="active">Despre noi</a>
+    </div>
+    <div class="element contactInfo">
+      <div class="verticalSplit">
+        <i class="fa-solid fa-phone"></i>
+        +40 720 759 624
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot"></i> Săftica, Ilfov
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav class="mobile-nav nav" [class.transparent]="isTransparent">
+  <div class="mobile-bar">
+    <button (click)="isMenuOpen = !isMenuOpen" [class.open]="isMenuOpen" aria-label="Toggle navigation menu">
+      <i class="fa-solid fa-bars" *ngIf="!isMenuOpen"></i>
+      <i class="fa-solid fa-times" *ngIf="isMenuOpen"></i>
+    </button>
+    <div class="logo">
+      Magic Action Horses
+      <img src="assets/logo.png">
+    </div>
+  </div>
+  <div *ngIf="isMenuOpen" class="mobile-buttons" [@fadeIn]>
+    <a routerLink="/home" routerLinkActive="active" (click)="isMenuOpen = false">Home</a>
+    <a routerLink="/news" routerLinkActive="active" (click)="isMenuOpen = false">News</a>
+    <a routerLink="/services" routerLinkActive="active" (click)="isMenuOpen = false">Services</a>
+    <a routerLink="/about" routerLinkActive="active" (click)="isMenuOpen = false">About Us</a>
+  </div>
+</nav>
+
+<a
+  href="https://wa.me/40720759624"
+  target="_blank"
+  class="whatsapp-float"
+  aria-label="Contactează-ne pe WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<router-outlet [@routeAnimations]="getRouteAnimationData()" />

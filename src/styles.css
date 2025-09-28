@@ -1,0 +1,17 @@
+body {
+    background-color: var(--accent-color);
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+:root {
+  --bg-color: #e8d7c0;
+  --element-bg-color: #e8d7c0;
+  --primary-color: #285943;
+  --primary-hover: #1e4131;
+  --primary-click: #152f23;
+  --text-color: #333333;
+  --secondary-text-color: #f2f2f2;
+  --accent-color: #2e2614;
+  --accent-color2: #1d170b;
+}
